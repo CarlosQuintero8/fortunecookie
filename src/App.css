@@ -1,0 +1,143 @@
+.App {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	width: 100%;
+	font-family: sans-serif;
+	position: relative;
+}
+
+.background-image {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: opacity 0.5s ease-in-out;
+	z-index: -1;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	color: #f0f0f0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	margin-bottom: 20px;
+}
+
+h1:hover {
+	animation: scaleInOut 3s ease-in-out infinite; /* Agrega la animación al hover */
+}
+
+@keyframes scaleInOut {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.galleta-image {
+	width: 150px;
+	margin-bottom: 20px;
+	animation: pulseGalleta 2s ease-in-out infinite;
+}
+
+@keyframes pulseGalleta {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.fortune-message {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.share-buttons {
+	margin-top: 20px;
+}
+
+.share-buttons button {
+	margin: 0 5px;
+	padding: 8px 12px;
+	font-size: 14px;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+
+.share-buttons img {
+	width: 24px;
+	height: 24px;
+}
+
+.share-buttons button:nth-child(1) {
+	background-color: #000000ee;
+	color: white;
+	padding: 8px 12px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+button {
+	padding: 15px 30px;
+	font-size: 18px;
+	cursor: pointer;
+	border: none;
+	border-radius: 30px;
+	background: linear-gradient(135deg, #667eea, #764ba2);
+	color: white;
+	box-shadow: 0 4px 8px #0000003f;
+	transition: transform 0.3s ease;
+}
+
+button:hover {
+	transform: translateY(-5px);
+}
+
+.favorite-fortunes {
+	background-color: rgba(0, 0, 0, 0.732);
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.favorite-fortunes ul {
+	list-style: none;
+	padding: 0;
+}
+
+.favorite-fortunes li {
+	margin-bottom: 10px;
+	padding: 10px;
+	border-bottom: 1px solid #333;
+}
